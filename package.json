@@ -2,6 +2,10 @@
   "name": "Labs12-fairshare-database",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
   "repository": "https://github.com/ItelSunday/Labs12-fairshare-database.git",
   "author": "ItelSunday <iteldomingotech@gmail.com>",
   "license": "MIT",
