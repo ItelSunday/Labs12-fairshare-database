@@ -1,0 +1,17 @@
+{
+  "name": "Labs12-fairshare-database",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ItelSunday/Labs12-fairshare-database.git",
+  "author": "ItelSunday <iteldomingotech@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "helmet": "^3.16.0",
+    "knex": "^0.16.5",
+    "sqlite3": "^4.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
