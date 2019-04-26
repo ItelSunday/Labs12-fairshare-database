@@ -1,10 +1,13 @@
 
 exports.up = function(knex, Promise) {
   return knex.schema.createTable('task', tbl => {
-      tbl.increment();
-      tbl.string('taskName', 128).notNullable()
+      tbl.increment('id');
+      tbl.string('taskName', 128).notNullable();
       tbl.text('description');
-      tbl.boolean('complete');
+      tbl.boolean('completed');
+      tbl.integer('completedBy');
+      tbl.date('completedOn');
+      tbl.integer('groupID').references('id').inTable('groups').onDelete("CASCADE").notNullable();
       tbl.string('comments');
 
   })
